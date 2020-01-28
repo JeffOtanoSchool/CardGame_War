@@ -1,3 +1,7 @@
-#cardDisplay{
-  flexDirection: 'row';
+#cardDisplay {
+  flex-direction: column;
+  flex: auto;
+}
+#container {
+  background-color: whitesmoke;
 }

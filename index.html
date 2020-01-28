@@ -1,34 +1,39 @@
-          <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Fight Card Game</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div id="container">
+      <h2>FIGHT!!!</h2>
 
+      <p>Turn Number:</p>
+      <p id="turnNumber">0</p>
 
-    <h2>The Game of War</h2>
+      <div class="cardDisplay">
+        <div>
+          <h3>Player:</h3>
+          <p id="playerScore">0</p>
+          <h1 id="playerCard"></h1>
+        </div>
 
- <button id="deal" > Deal </button>
- <button id="next" > Next </button>
+        <div>
+          <h3>Computer:</h3>
+          <p id="computerScore">0</p>
+          <h1 id="computerCard"></h1>
+        </div>
+      </div>
 
+      <button id="deal">Deal!!!!</button>
+      <button id="next">Next</button>
 
- <div class="cardDisplay">
-   
-   <div>
-   <h3>Player: </h3> <p id="playerScore"></p>
-   </div>
-
-   <div>
-   <h3>Computer: </h3> <p id="computerScore"></p>
-   </div>
- </div>
-
-
-        <script src="main.js"></script>
-            <script src="Card.js"></script>
-    <script src="Deck.js"></script>
+      <p id="outcome"></p>
+      <script src="main.js"></script>
+      <script src="Card.js"></script>
+      <script src="Deck.js"></script>
+    </div>
   </body>
 </html>
